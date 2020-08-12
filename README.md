@@ -33,6 +33,7 @@
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ## Association
+- has_many :groups_users
 
 
 This README would normally document whatever steps are necessary to get the
