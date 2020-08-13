@@ -36,7 +36,7 @@
 |group_id|integer|null: false, foreign_key: true|
 |image|string|
 ## Association
-- belongs_to :users
+- belongs_to :user
 - belongs_to :group
 
 
