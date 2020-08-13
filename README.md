@@ -13,7 +13,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|integer|null: false, foreign_key: true|
+|name|string|null: false|
 ## Association
 - has_many :groups_users
 - has_many :users through: groups_users
@@ -36,8 +36,8 @@
 |group_id|integer|null: false, foreign_key: true|
 |image|string|
 ## Association
-- has_one :users
-- has_one :group
+- belongs_to :users
+- belongs_to :group
 
 
 This README would normally document whatever steps are necessary to get the
